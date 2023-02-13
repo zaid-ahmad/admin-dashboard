@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+    DEBUG TOOL: border: 1px solid red; 
+*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#nav {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+#main-nav {
+    background-color: #1992d4;
+    width: 350px;
+    height: 100vh;
+    color: #fff;
+    padding: 5%;
+}
+
+#main-nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.logo {
+    margin-top: -7%;
+    padding-bottom: 12%;
+}
+
+#main-nav .logo img {
+    width: 40px;
+    height: auto;
+}
+
+.settings {
+    margin-top: 20%;
+}
+
+#main-nav img {
+    width: 20px;
+    height: auto;
+}
+
+.logo, .home, .profile, .messages, .history, .tasks, .communities, 
+.settings, .support, .privacy {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 8%;
+}
+
+#side-nav {
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+    grid-template-rows: repeat(2, 90px);
+    padding-top: 2%;
+    height: 20vh;
+    box-shadow: 1px 0 10px 1px #33333369;
+}
+
+.profilel {
+    padding: 5% 0 0 5%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    line-height: 1.6;
+    width: 500px;
+}
+
+.profilel p {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.upper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2%;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 5%;
+}
+
+.search-bar img {
+    width: 24px;
+    height: auto;
+}
+
+.search-bar input {
+    width: 500px;
+    height: 30px;
+    padding: 1%;
+    border-radius: 10px;
+    border: none;
+    background-color: #e2e8f0;
+}
+
+.notification img {
+    width: 20px;
+    height: auto;
+}
+
+.pfpl {
+    width: 60px;
+    height: auto;
+}
+
+.pfp {
+    width: 45px;
+    height: auto;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-weight: 500;
+    width: 300px;
+    margin-left: 25%;
+}
+
+.buttons {
+    padding: 10%;
+    width: 500px;
+}
+
+.buttons button {
+    margin-left: 5%;
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 100px;
+    background-color: #1992d4;
+    color: #fff;
+    font-weight: 900;
+}
