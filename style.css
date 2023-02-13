@@ -5,16 +5,18 @@
 }
 
 /*
-    DEBUG TOOL: border: 1px solid red; 
+    DEBUG TOOL 
 */
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #e2e8f0;
 }
 
 #nav {
     display: grid;
     grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
 }
 
 #main-nav {
@@ -22,6 +24,7 @@ body {
     width: 350px;
     height: 100vh;
     color: #fff;
+
     padding: 5%;
 }
 
@@ -65,6 +68,9 @@ body {
     grid-template-rows: repeat(2, 90px);
     padding-top: 2%;
     height: 20vh;
+    background-color: #fff;
+    grid-column-start: 2;
+    grid-row-start: 1;
     box-shadow: 1px 0 10px 1px #33333369;
 }
 
@@ -147,4 +153,119 @@ body {
     background-color: #1992d4;
     color: #fff;
     font-weight: 900;
+}
+
+main {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    width: 100vh;
+    height: 700px;
+    margin-left: 8%;
+    margin-top: 13%;
+    align-items: end;
+} 
+
+.project-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+
+#projects h2 {
+    font-weight: 500;
+    font-size: 18px;
+    padding-bottom: 2%;
+}
+
+.project {
+    width: 450px;
+    height: 200px;
+    background-color: #fff;
+    border-left: 8px solid #f0b429;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+.content {  
+    padding: 5% 0 10% 0 ;
+}
+
+.action {
+    float: right;
+    width: 150px;
+
+}
+
+.content h2 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.content p {
+    font-size: 14px;
+    color: #999;
+}
+
+.action button{
+    margin-right: 15%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.action button img{
+    width: 20px;
+    height: auto;
+}
+
+aside {
+    margin-top: -100%;
+    margin-left: 120px;
+}
+
+#announcements {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+#announcements h2 {
+    padding: 5%;
+}
+
+.fdg {
+    font-size: 18px;
+    margin-top: -20%;
+}
+
+#announcements .card {
+    height: 140px;
+}
+
+#announcements hr {
+    text-align: center;
+    height: 5px;
+    width: 60px;
+    color: #c0bdbd;
+    border: none;
+}
+
+.card {
+    border-radius: 5px;
+    background-color: #fff;
+    padding: .5% 5% 5% 5%;
+}
+
+.card h2 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.card p {
+    color: #999;
+    font-size: 12px;
 }
